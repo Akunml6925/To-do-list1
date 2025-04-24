@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List - Tandai Selesai</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4 bg-light">
+  <h2>Todo List</h2>
+
+  <form id="form-tugas" class="mb-3">
+    <input type="text" id="nama" class="form-control mb-2" placeholder="Nama tugas">
+    <select id="prioritas" class="form-control mb-2">
+      <option value="Rendah">Rendah</option>
+      <option value="Sedang">Sedang</option>
+      <option value="Tinggi">Tinggi</option>
+    </select>
+    <input type="date" id="tanggal" class="form-control mb-2">
+    <button type="submit" class="btn btn-success">Tambah Tugas</button>
+  </form>
+
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nama Tugas</th>
+        <th>Prioritas</th>
+        <th>Tanggal</th>
+        <th>Status</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody id="tabel-tugas"></tbody>
+  </table>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
