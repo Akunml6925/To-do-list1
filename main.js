@@ -53,6 +53,8 @@ function tampilkanTugas() {
       <td>${tugas.selesai ? 'Selesai' : 'Belum'}</td>
       <td>
         <button class="btn btn-sm btn-primary" onclick="tandaiSelesai(${tugas.id})">Tandai Selesai</button>
+      <a href="ubah-todoolist.html?id=${tugas.id}" class="text-info me+2">edit</a>
+      <a href="#" class="text-danger"onclick="hapusTugas(${tugas.id})">hapus</a>
       </td>
     `;
     tbody.appendChild(row);
